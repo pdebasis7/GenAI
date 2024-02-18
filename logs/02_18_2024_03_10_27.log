@@ -1,0 +1,4 @@
+[2024-02-18 03:22:28,616] 1027 httpx - INFO - HTTP Request: POST https://dp0303014.openai.azure.com//openai/deployments/dp140303/completions?api-version=2023-12-01-preview "HTTP/1.1 200 OK"
+[2024-02-18 03:22:30,516] 1027 httpx - INFO - HTTP Request: POST https://dp0303014.openai.azure.com//openai/deployments/dp140303/completions?api-version=2023-12-01-preview "HTTP/1.1 200 OK"
+[2024-02-18 03:23:06,955] 1027 httpx - INFO - HTTP Request: POST https://dp0303014.openai.azure.com//openai/deployments/dp140303/completions?api-version=2023-12-01-preview "HTTP/1.1 200 OK"
+[2024-02-18 03:23:08,525] 1027 httpx - INFO - HTTP Request: POST https://dp0303014.openai.azure.com//openai/deployments/dp140303/completions?api-version=2023-12-01-preview "HTTP/1.1 200 OK"

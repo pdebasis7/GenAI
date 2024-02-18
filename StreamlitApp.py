@@ -67,6 +67,7 @@ with st.form("user_inputs"):
                     quiz=response.get("quiz", None)
                     if quiz is not None:
                         table_data=get_table_data(quiz)
+                        print(table_data)
                         if table_data is not None:
                             df=pd.DataFrame(table_data)
                             df.index=df.index+1

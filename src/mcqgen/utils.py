@@ -27,6 +27,7 @@ def get_table_data(quiz_str):
     try:
         # convert the quiz from a str to dict
         quiz_dict=json.loads(quiz_str)
+        print(quiz_dict)
         quiz_table_data=[]
         
         # iterate over the quiz dictionary and extract the required information
