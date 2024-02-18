@@ -31,13 +31,13 @@ llm = AzureOpenAI(
     api_version=API_VERSION,
     azure_endpoint=ENDPOINT,
     temperature=0.5,
-    max_tokens=1000
+    max_tokens=1500
 )
 
 template="""
 Text:{text}
 You are an expert MCQ maker. Given the above text, it is your job to \
-create a quiz  of {number} multiple choice questions for {subject} students in {tone} tone. 
+create a quiz  of {number} multiple choice questions for {subject} students in {tone} tone.
 Make sure the questions are not repeated and check all the questions to be conforming the text as well.
 Make sure to format your response like  RESPONSE_JSON below  and use it as a guide. \
 Ensure to make {number} MCQs
@@ -56,7 +56,7 @@ quiz_chain=LLMChain(llm=llm, prompt=quiz_generation_prompt, output_key="quiz", v
 
 template="""
 You are an expert english grammarian and writer. Given a Multiple Choice Quiz for {subject} students.\
-You need to evaluate the complexity of teh question and give a complete analysis of the quiz if the students
+You need to evaluate the complexity of the question and give a complete analysis of the quiz if the students
 will be able to unserstand the questions and answer them. Only use at max 50 words for complexity analysis. 
 if the quiz is not at par with the cognitive and analytical abilities of the students,\
 update tech quiz questions which needs to be changed  and change the tone such that it perfectly fits the student abilities
