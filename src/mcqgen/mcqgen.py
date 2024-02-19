@@ -8,7 +8,7 @@ from src.mcqgen.logger import logging
 
 #imporing necessary packages packages from langchain
 from langchain_openai import AzureOpenAI
-from langchain.chat_models import azure_openai
+from langchain.chat_models import azure_openai, AzureChatOpenAI
 from dotenv import load_dotenv
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
@@ -24,7 +24,7 @@ API_VERSION=os.getenv("api_version")
 ENDPOINT=os.getenv("azure_endpoint")
 
 #print("Value of MY_VARIABLE:", key)
-
+"""
 llm = AzureOpenAI( 
     deployment_name=DEPLOYMENT_NAME,
     api_key=API_KEY,
@@ -32,6 +32,17 @@ llm = AzureOpenAI(
     azure_endpoint=ENDPOINT,
     temperature=0.5,
     max_tokens=1500
+)
+"""
+llm = AzureChatOpenAI( 
+    #deployment_name=DEPLOYMENT_NAME,
+    #model_kwargs={'deployment_name':'omsgenai1'},
+    deployment_name='omsgenai1',
+    api_key='1ea71466d8ac49f4999b1984ffbab0a1',
+    api_version="2023-07-01-preview",
+    azure_endpoint='https://omsgenai.openai.azure.com/',
+    temperature=0.5
+
 )
 
 template="""

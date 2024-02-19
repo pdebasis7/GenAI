@@ -1,0 +1,7 @@
+[2024-02-19 15:41:42,809] 1027 httpx - INFO - HTTP Request: POST https://omsgenai.openai.azure.com//openai/deployments/omsgenai1/completions?api-version=2023-07-01-preview "HTTP/1.1 400 Bad Request"
+[2024-02-19 15:47:48,220] 1027 httpx - INFO - HTTP Request: POST https://omsgenai.openai.azure.com//openai/deployments/omsgenai1/chat/completions?api-version=2023-07-01-preview "HTTP/1.1 200 OK"
+[2024-02-19 15:47:51,074] 1027 httpx - INFO - HTTP Request: POST https://omsgenai.openai.azure.com//openai/deployments/omsgenai1/chat/completions?api-version=2023-07-01-preview "HTTP/1.1 200 OK"
+[2024-02-19 15:48:41,383] 1027 httpx - INFO - HTTP Request: POST https://omsgenai.openai.azure.com//openai/deployments/omsgenai1/chat/completions?api-version=2023-07-01-preview "HTTP/1.1 200 OK"
+[2024-02-19 15:48:51,590] 1027 httpx - INFO - HTTP Request: POST https://omsgenai.openai.azure.com//openai/deployments/omsgenai1/chat/completions?api-version=2023-07-01-preview "HTTP/1.1 200 OK"
+[2024-02-19 15:50:13,403] 1027 httpx - INFO - HTTP Request: POST https://omsgenai.openai.azure.com//openai/deployments/omsgenai1/chat/completions?api-version=2023-07-01-preview "HTTP/1.1 200 OK"
+[2024-02-19 15:50:21,676] 1027 httpx - INFO - HTTP Request: POST https://omsgenai.openai.azure.com//openai/deployments/omsgenai1/chat/completions?api-version=2023-07-01-preview "HTTP/1.1 200 OK"
